@@ -1,0 +1,32 @@
+.palette {
+
+    &__group {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    &__square1 {
+        height: 50px;
+        width: 50px;
+        background-color: var(--primary-color);
+    }
+
+    &__square2 {
+        height: 50px;
+        width: 50px;
+        background-color: var(--secondary-color);
+    }
+
+    &__square3 {
+        height: 50px;
+        width: 50px;
+        background-color: var(--tertiary-color);
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
