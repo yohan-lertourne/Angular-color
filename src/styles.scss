@@ -1,8 +1,0 @@
-:root {
-    --primary-color-h: 100;
-    --primary-color-s: 60%;
-    --primary-color-l: 50%;
-    --primary-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
-    --secondary-color: hsl(calc(var(--primary-color-h) + 30), var(--primary-color-s), var( --primary-color-l));
-    --tertiary-color: hsl(calc(var(--primary-color-h) + 180), var(--primary-color-s), var( --primary-color-l));
-}

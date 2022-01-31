@@ -1,20 +1,19 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaletteComponent } from './components/palette/palette.component';
-import { AffichageComponent } from './components/affichage/affichage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaletteComponent,
-    AffichageComponent
+    PaletteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

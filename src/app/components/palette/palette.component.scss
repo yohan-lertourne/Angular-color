@@ -1,32 +1,27 @@
-.palette {
+.palette{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:10px;
+    background-color: hsl(0, 6%, 86%);
 
     &__group {
         display: flex;
         flex-direction: row;
-        gap: 20px;
-    }
-
-    &__square1 {
-        height: 50px;
-        width: 50px;
-        background-color: var(--primary-color);
-    }
-
-    &__square2 {
-        height: 50px;
-        width: 50px;
-        background-color: var(--secondary-color);
-    }
-
-    &__square3 {
-        height: 50px;
-        width: 50px;
-        background-color: var(--tertiary-color);
-    }
-
-    &__input {
-        display: flex;
-        flex-direction: row;
         gap: 10px;
     }
-}
+
+    &__square {
+        width:60px;
+        height:60px;
+    }
+
+    &__colorvalues {
+        width: 400px;
+        margin:5px;
+        padding:5px;
+        background-color: hsl(0, 0%, 16%);
+        color: hsl(0, 0%, 100%);
+    }
+  }

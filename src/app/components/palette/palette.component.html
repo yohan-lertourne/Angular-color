@@ -1,22 +1,23 @@
 <div class="palette">
-   <h1>Palette</h1>
-   <div class="palette__group">
-      <p class="palette__square1"></p>
-      <p class="palette__square2"></p>
-      <p class="palette__square3"></p>
-      <div>
-         <div class="palette__input">
-            <input type="range" name="h" id="h" min="0" max="360">
-            <label for="h">h</label>
-         </div>
-         <div class="palette__input">
-            <input type="range" name="s" id="s" min="0" max="100">
-            <label for="h">s</label>
-         </div>
-         <div class="palette__input">
-            <input type="range" name="l" id="l" min="0" max="100">
-            <label for="l">l</label>
-         </div>
-      </div>
-   </div>
+  <div class="palette__group">
+    <p [style]='Square1' class='palette__square'></p>
+    <p [style]='Square2' class='palette__square'></p>
+    <p [style]='Square3' class='palette__square'></p>
+  </div>
+  <div>
+    <p>Hue:</p>
+    <input max=360 [(ngModel)]="h" type="range" (mousemove)="realTime()">
+    <p>Saturation:</p>
+    <input max=100 [(ngModel)]="s" type="range" (mousemove)="realTime()">
+    <p>Lightness:</p>
+    <input max=100 [(ngModel)]="l" type="range" (mousemove)="realTime()">
+  </div>
+  <div class='palette__colorvalues'>
+    <pre>:root&#123;
+      {{Square1}};
+      {{Square2}};
+      {{Square3}}
+    }
+    </pre>
+  </div>
 </div>
